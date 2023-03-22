@@ -1,0 +1,15 @@
+Name: minio-server
+Host: 0.0.0.0
+Port: 8080
+
+DataBase:
+  Type: "mysql"
+  Url: "root:password@tcp(mysql:3306)/minio-server?charset=utf8"
+  MaxIdleConns: 10
+  MaxOpenConns: 20
+  # 是否显示sql语句
+  ShowSql: true
+Redis:
+  Addr: "localhost:6379"
+  Password: "password"
+  PoolSize: 10
